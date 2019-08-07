@@ -1,0 +1,14 @@
+Include ~/.ssh/config-private
+
+# Internet
+Host github.com
+  User git
+  IdentityFile ~/.ssh/dereli@github.com.key
+
+Host gitlab.com
+  User git
+  IdentityFile ~/.ssh/dereli@gitlab.com.key
+
+Host bitbucket.org
+  User git
+  IdentityFile ~/.ssh/dereli@bitbucket.org.key

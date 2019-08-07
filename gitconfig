@@ -1,0 +1,24 @@
+[user]
+  name = Zubeyr Dereli
+  email = dereli@gmail.com
+
+[alias]
+  br = branch
+  ci = commit
+  cl = clone
+  co = checkout
+  cp = cherry-pick
+  fa = fetch --all
+  lg = log -p
+  pr = remote prune
+  st = status -sb
+  x = !gitx
+
+[pull]
+  rebase = true
+
+[push]
+  default = current
+
+[rebase]
+  autoStash = true
