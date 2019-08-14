@@ -61,3 +61,5 @@ function last_exit_code() {
     echo "$EXIT_CODE_PROMPT"
   fi
 }
+
+[ -f ~/.zshrc-private ] && . ~/.zshrc-private
