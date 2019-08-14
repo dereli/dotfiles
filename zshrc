@@ -26,7 +26,16 @@ serve() { python -m SimpleHTTPServer ${1:-8000} }
 
 case $(uname) in
 Darwin)
-  alias nw="networksetup -switchtolocation '${1:-Automatic}' 1> /dev/null"
+  proxy() {
+    if [[ "$#" -eq "" ]]; then
+      networksetup -getwebproxy 'Wi-Fi' | head -n 1
+      networksetup -getsecurewebproxy 'Wi-Fi' | head -n 1 | xargs echo "Secure"
+    else
+      networksetup -setwebproxystate ${2-'Wi-Fi'} ${1}
+      networksetup -setsecurewebproxystate ${2-'Wi-Fi'} ${1}
+    fi
+  }
+  nw() { networksetup -switchtolocation "${1:-Automatic}"; }
   alias gx="gitx"
   ;;
 Linux)
