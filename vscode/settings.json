@@ -55,6 +55,7 @@
   "merge-conflict.autoNavigateNextConflict.enabled": true,
   "problems.decorations.enabled": false,
   "search.smartCase": true,
+  "search.useIgnoreFiles": false,
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
   "update.showReleaseNotes": false,
