@@ -16,6 +16,7 @@ source $ZSH/oh-my-zsh.sh
 # ALIAS #
 alias c="codium"
 alias d="docker"
+alias gr="cd \`git rev-parse --show-toplevel\`"
 alias k9="kill -9"
 alias py="python"
 alias ls="ls -GF"
