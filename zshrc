@@ -22,7 +22,7 @@ alias py="python"
 alias ls="ls -GF"
 alias l="ls -lhaGF"
 
-psv() { ps x | grep $1 | grep -v 'VS\|vscode' }
+psv() { ps ax | grep $1 | grep -v 'VS\|vscode' }
 serve() { python -m SimpleHTTPServer ${1:-8000} }
 
 case $(uname) in
