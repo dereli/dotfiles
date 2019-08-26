@@ -4,7 +4,7 @@
   "window.newWindowDimensions": "maximized",
   "window.restoreWindows": "all",
   "window.title": "${rootName}${separator}${activeEditorShort}",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
   /* WORKBENCH */
   "workbench.colorTheme": "Monokai",
   "workbench.editor.closeOnFileDelete": true,
@@ -21,7 +21,7 @@
   "editor.cursorBlinking": "phase",
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 18,
+  "editor.fontSize": 15,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [
