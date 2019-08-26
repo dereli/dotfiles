@@ -88,12 +88,18 @@
   "java.test.defaultConfig": "default",
   "java.test.report.position": "currentView",
   "java.completion.importOrder": [
-    "com",
-    "lombok",
-    "nl",
-    "org",
+    "",
     "javax",
-    "java"
+    "java",
+    "#"
+  ],
+  "maven.pomfile.autoUpdateEffectivePOM": true,
+  "maven.terminal.useJavaHome": true,
+  "maven.terminal.favorites": [
+    {
+      "alias": "run",
+      "command": "clean install -Ptomcat,debug -Dmaven.test.skip=true"
+    }
   ],
   /* rest client */
   "rest-client.defaultHeaders": {
