@@ -77,7 +77,9 @@
   "gitblame.logNonCritical": false,
   "gitblame.statusBarMessageFormat": "${author.name} • ${time.ago}",
   /* java */
+  "java.actionsOnPaste.organizeImports": false,
   "java.configuration.updateBuildConfiguration": "automatic",
+  "java.errors.incompleteClasspath.severity": "ignore",
   "java.format.comments.enabled": true,
   "java.format.enabled": true,
   "java.format.settings.profile": "CustomStyle",

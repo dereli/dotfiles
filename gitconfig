@@ -11,6 +11,7 @@
   fa = fetch --all
   lg = log -p
   pr = remote prune
+  su = stash -u
   st = status -sb
   x = !gitx
 

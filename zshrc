@@ -19,8 +19,7 @@ alias d="docker"
 alias gr="cd \`git rev-parse --show-toplevel\`"
 alias k9="kill -9"
 alias py="python"
-alias ls="ls -GF"
-alias l="ls -lhaGF"
+alias cat="cat -n"
 
 psv() { ps ax | grep $1 | grep -v 'VS\|vscode' }
 serve() { python -m SimpleHTTPServer ${1:-8000} }
@@ -38,9 +37,13 @@ Darwin)
   }
   nw() { networksetup -switchtolocation "${1:-Automatic}"; }
   alias gx="gitx"
+  alias ls="ls -GF"
+  alias l="ls -lhaGF"
   ;;
 Linux)
   #
+  alias ls="ls -F --color"
+  alias l="ls -lhaF --color"
   ;;
 esac
 

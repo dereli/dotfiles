@@ -6,5 +6,22 @@
   {
     "key": "shift+cmd+-",
     "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "shift+cmd+j",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
+    "key": "cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "shift+cmd+=",
+    "command": "-codealignment.alignbystring",
+    "when": "editorTextFocus"
   }
 ]
