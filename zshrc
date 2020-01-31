@@ -38,7 +38,6 @@ Darwin)
       networksetup -getwebproxy $ns | head -n 3 | tail -n 2
     fi
   }
-  nw() { networksetup -switchtolocation "${1:-Automatic}"; }
   alias gx="gitx"
   alias ls="ls -GF"
   alias l="ls -lhaGF"
