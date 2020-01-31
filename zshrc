@@ -27,12 +27,15 @@ serve() { python -m SimpleHTTPServer ${1:-8000} }
 case $(uname) in
 Darwin)
   proxy() {
-    if [[ "$#" -eq "" ]]; then
-      networksetup -getwebproxy 'Wi-Fi' | head -n 1
-      networksetup -getsecurewebproxy 'Wi-Fi' | head -n 1 | xargs echo "Secure"
+    ns=`networksetup -listallnetworkservices | grep -i ${2-''} | tail -n 1`
+    echo "Adapter:" ${ns}
+    if [[ "${1}" == "on" || "${1}" == "off" ]]; then
+      networksetup -setwebproxystate $ns ${1}
+      networksetup -setsecurewebproxystate $ns ${1}
     else
-      networksetup -setwebproxystate ${2-'Wi-Fi'} ${1}
-      networksetup -setsecurewebproxystate ${2-'Wi-Fi'} ${1}
+      networksetup -getwebproxy $ns | head -n 1
+      networksetup -getsecurewebproxy $ns | head -n 1 | xargs echo "Secure"
+      networksetup -getwebproxy $ns | head -n 3 | tail -n 2
     fi
   }
   nw() { networksetup -switchtolocation "${1:-Automatic}"; }
