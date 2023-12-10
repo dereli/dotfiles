@@ -4,7 +4,15 @@
     "command": "-workbench.action.zoomIn"
   },
   {
+    "key": "cmd+=",
+    "command": "-workbench.action.zoomIn"
+  },
+  {
     "key": "shift+cmd+-",
+    "command": "-workbench.action.zoomOut"
+  },
+  {
+    "key": "cmd+-",
     "command": "-workbench.action.zoomOut"
   },
   {
@@ -12,16 +20,13 @@
     "command": "workbench.action.toggleMaximizedPanel"
   },
   {
-    "key": "cmd+=",
-    "command": "-workbench.action.zoomIn"
+    "key": "shift+cmd+up",
+    "command": "git.stageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
   },
   {
-    "key": "cmd+-",
-    "command": "-workbench.action.zoomOut"
-  },
-  {
-    "key": "shift+cmd+=",
-    "command": "-codealignment.alignbystring",
-    "when": "editorTextFocus"
+    "key": "shift+cmd+down",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor && !operationInProgress"
   }
 ]
