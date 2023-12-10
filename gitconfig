@@ -13,7 +13,6 @@
   pr = remote prune
   su = stash -u
   st = status -sb
-  x = !gitx
 
 [pull]
   rebase = true
@@ -23,3 +22,9 @@
 
 [rebase]
   autoStash = true
+
+[core]
+  excludesFile = ~/.gitignore
+
+[remote "origin"]
+  prune = true
