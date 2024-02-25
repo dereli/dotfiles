@@ -1,6 +1,6 @@
 # Dotfiles
 
-These are for my personal use. Assumes zsh and oh-my-zsh installed.
+These are for my personal use. Only for zsh.
 
 ## Install
 

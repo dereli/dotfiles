@@ -1,13 +1,14 @@
+# TODO Document all choices
+
 export LC_ALL="en_US.UTF-8"
 export LC_CTYPE=en_US.UTF-8
 export LANG="en_US.UTF-8"
-export NODE_EXTRA_CA_CERTS=~/.config/node.pem
-
-# TODO Document all choices
 
 export TERM=screen-256color
 export CLICOLOR=1
 export LSCOLORS=Gxfxcxdxbxegedabagacad
+
+export NODE_EXTRA_CA_CERTS=~/.config/node.pem
 
 setopt autocd
 setopt complete_in_word
@@ -52,6 +53,7 @@ bindkey "^[f" forward-word
 HYPHEN_INSENSITIVE=true
 COMPLETION_WAITING_DOTS=true
 ZSH_COMPDUMP="$ZSH/.cache/.zcompdump-$ZSH_VERSION"
+
 alias -g ...=../..
 alias -g ....=../../..
 alias c="code"

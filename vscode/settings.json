@@ -104,29 +104,6 @@
   "git-graph.date.format": "ISO Date & Time",
   "git-graph.dialog.addTag.type": "Lightweight",
 
-  /* java */
-  "java.actionsOnPaste.organizeImports": false,
-  "java.configuration.updateBuildConfiguration": "automatic",
-  "java.errors.incompleteClasspath.severity": "ignore",
-  "java.format.comments.enabled": true,
-  "java.format.enabled": true,
-  "java.format.settings.profile": "CustomStyle",
-  "java.format.settings.url": "~/dotfiles/java-formatting.xml",
-  "java.import.gradle.enabled": false,
-  "java.maven.downloadSources": true,
-  "java.saveActions.organizeImports": false,
-  "java.test.defaultConfig": "default",
-  "java.test.report.position": "currentView",
-  "java.completion.importOrder": ["", "javax", "java", "#"],
-  "maven.pomfile.autoUpdateEffectivePOM": true,
-  "maven.terminal.useJavaHome": true,
-  "maven.terminal.favorites": [
-    {
-      "alias": "run",
-      "command": "clean install -Ptomcat,debug -Dmaven.test.skip=true"
-    }
-  ],
-
   /* markdown */
   "markdown.preview.doubleClickToSwitchToEditor": false,
   "markdown.preview.fontSize": 16,

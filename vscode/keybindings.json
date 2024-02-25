@@ -1,4 +1,5 @@
 [
+  // Disable zooming shortcuts
   {
     "key": "shift+cmd+=",
     "command": "-workbench.action.zoomIn"
@@ -15,10 +16,12 @@
     "key": "cmd+-",
     "command": "-workbench.action.zoomOut"
   },
+  // Add shortcut for panel maximization
   {
     "key": "shift+cmd+j",
     "command": "workbench.action.toggleMaximizedPanel"
   },
+  // Add shortcut for diff panel
   {
     "key": "shift+cmd+up",
     "command": "git.stageSelectedRanges",
