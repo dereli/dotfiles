@@ -54,6 +54,11 @@ HYPHEN_INSENSITIVE=true
 COMPLETION_WAITING_DOTS=true
 ZSH_COMPDUMP="$ZSH/.cache/.zcompdump-$ZSH_VERSION"
 
+HISTFILE="$ZDOTDIR/.history"
+HISTSIZE=10000
+SAVEHIST=10000
+setopt appendhistory
+
 alias -g ...=../..
 alias -g ....=../../..
 alias c="code"
