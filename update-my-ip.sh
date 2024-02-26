@@ -13,4 +13,5 @@ update_my_ip() {
   fi
 }
 
+set -e
 update_my_ip
