@@ -58,7 +58,9 @@
   /* TERMINAL */
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeightBold": "600",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 10000,
 
