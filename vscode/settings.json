@@ -37,6 +37,9 @@
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "›": true
+  },
 
   /* DIFF EDITOR */
   "diffEditor.renderSideBySide": false,
@@ -53,6 +56,19 @@
   "files.trimTrailingWhitespace": true,
   "files.associations": {
     ".env": "properties"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "*.code-*": true,
+    ".gitignore": true
+  },
+  "files.readonlyInclude": {
+    "**/node_modules": true
   },
 
   /* TERMINAL */
@@ -139,7 +155,7 @@
   "stylusSupremacy.sortProperties": "grouped",
 
   /* todo */
-  "todo.file.name": "TODO",
+  "todo.file.defaultContent": "TODO:\n  › ",
   "todo.symbols.box": "›",
   "todo.symbols.cancelled": "✕",
   "todo.symbols.done": "+",
