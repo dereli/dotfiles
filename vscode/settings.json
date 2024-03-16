@@ -21,12 +21,12 @@
   "workbench.tips.enabled": false,
 
   /* EDITOR */
+  "editor.accessibilitySupport": "off",
   "editor.codeActionWidget.includeNearbyQuickFixes": true,
   "editor.codeActionsOnSave": {
     "source.fixAll": "explicit"
   },
   "editor.cursorBlinking": "phase",
-  "editor.foldingImportsByDefault": true,
   "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
@@ -64,8 +64,14 @@
     "**/CVS": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "*.code-*": true,
-    ".gitignore": true
+    "**/node_modules": true,
+    ".editorconfig": true,
+    "{.env,.env.*}": true,
+    ".{docker,git,eslint,prettier}ignore": true,
+    ".{prettier,eslint,npm,yarn}rc{,.js,.json,.yml,.yaml}": true,
+    "*.{code,sublime}-*": true,
+    ".{github,husky,vscode,idea,next}": true,
+    "{npm,yarn}-{debug,error}.log": true
   },
   "files.readonlyInclude": {
     "**/node_modules": true
@@ -162,7 +168,7 @@
 
   /* LANGUAGE SPECIFIC */
   "[todo]": {
-    "editor.wordWrapColumn": 100,
+    "editor.wordWrapColumn": 150,
     "editor.wordWrap": "wordWrapColumn",
     "editor.wrappingIndent": "indent"
   },
