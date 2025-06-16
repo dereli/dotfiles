@@ -1,11 +1,26 @@
 #!/usr/bin/env bash
-cwd=`dirname $(realpath "$0")`
-mkdir -p ~/.ssh ~/.zsh ~/.config
-[ -f ~/.zshenv ] || echo "ZDOTDIR=~/.zsh" > ~/.zshenv
-[ -f ~/.zsh/.zshrc ] || ln -s $cwd/zshrc ~/.zsh/.zshrc
-[ -f ~/.gitconfig ] || ln -s $cwd/gitconfig ~/.gitconfig
-[ -f ~/.ssh/config ] || ln -s $cwd/sshconfig ~/.ssh/config
-[ -f ~/.config/node.pem ] || touch ~/.config/node.pem
-[ -f ~/Library/Application\ Support/Code/User/settings.json ] || ln -s $cwd/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-[ -f ~/Library/Application\ Support/Code/User/keybindings.json ] || ln -s $cwd/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
-curl -s https://git.kernel.org/pub/scm/git/git.git/plain/contrib/completion/git-completion.bash -o ~/.zsh/git-completion.bash
+script_dir="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
+
+mkdir -p ~/.ssh ~/.config/Code/User/ ~/.zsh/completions
+[ -e ~/.zshenv ] || echo "ZDOTDIR=~/.zsh" > ~/.zshenv
+[ -e ~/.zsh/.zshrc ] || ln -s $script_dir/zshrc ~/.zsh/.zshrc
+[ -e ~/.gitconfig ] || ln -s $script_dir/gitconfig ~/.gitconfig
+[ -e ~/.ssh/config ] || ln -s $script_dir/sshconfig ~/.ssh/config
+[ -e ~/.config/node.pem ] || touch ~/.config/node.pem
+[ -e ~/.zsh/_docker ] || curl -s https://raw.githubusercontent.com/docker/cli/master/contrib/completion/zsh/_docker -o ~/.zsh/completions/_docker
+
+chmod 600 ~/.ssh/config
+chmod 600 ~/.config/node.pem
+
+vscode_config_dir=""
+case $(uname) in
+Darwin)
+  vscode_config_dir=~/Library/Application\ Support/Code/User
+  ;;
+Linux)
+  vscode_config_dir=~/.config/Code/User
+  ;;
+esac
+
+[ -e "$vscode_config_dir/settings.json" ] || ln -s $script_dir/vscode/settings.json "$vscode_config_dir/settings.json"
+[ -e "$vscode_config_dir/keybindings.json" ] || ln -s $script_dir/vscode/keybindings.json "$vscode_config_dir/keybindings.json"
