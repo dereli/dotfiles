@@ -9,7 +9,6 @@
   /* FILE EXPLORER */
   "explorer.autoReveal": true,
   "explorer.autoRevealExclude": { "**/node_modules": true },
-  "explorer.fileNesting.enabled": true,
 
   /* WORKBENCH */
   "workbench.colorTheme": "Monokai",
@@ -46,6 +45,7 @@
   "editor.unicodeHighlight.allowedCharacters": {
     "›": true
   },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   /* DIFF EDITOR */
@@ -102,6 +102,10 @@
   "terminal.integrated.fontWeightBold": "600",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen",
+    "-workbench.action.quickOpenView"
+  ],
 
   /* SOURCE CONTROL */
   "scm.showActionButton": false,
@@ -114,6 +118,7 @@
   /* DEBUG */
   "debug.openExplorerOnEnd": true,
   "debug.toolBarLocation": "commandCenter",
+  "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
 
   /* MISC */
   "problems.decorations.enabled": false,
