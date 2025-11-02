@@ -42,6 +42,7 @@
   "editor.suggest.localityBonus": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.unicodeHighlight.allowedCharacters": {
     "›": true
   },
@@ -166,6 +167,9 @@
   "rest-client.fontSize": 14,
   "rest-client.previewColumn": "current",
   "rest-client.previewOption": "exchange",
+
+  /* prettier */
+  "prettier.htmlWhitespaceSensitivity": "strict",
 
   /* todo */
   "todo.file.defaultContent": "TODO:\n  › ",

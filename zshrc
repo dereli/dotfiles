@@ -99,6 +99,15 @@ Linux)
   ;;
 esac
 
+case ":${PATH}:" in
+    *:"$HOME/.local/bin":*)
+        ;;
+    *)
+        # Prepend path in case a system-installed binary needs to be overridden
+        export PATH="$HOME/.local/bin:$PATH"
+        ;;
+esac
+
 # Show last command's exit code in the prompt if non-zero
 function last_exit_code() {
   local LAST_EXIT_CODE=$?
