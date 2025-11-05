@@ -1,0 +1,237 @@
+{
+  /* ============================================
+     WINDOW
+     ============================================ */
+  "window.clickThroughInactive": false,
+  "window.newWindowDimensions": "maximized",
+  "window.restoreWindows": "all",
+  "window.title": "${rootName}${separator}${activeEditorShort}",
+  "window.zoomLevel": 0,
+
+  /* ============================================
+     WORKBENCH
+     ============================================ */
+  "workbench.colorTheme": "Monokai",
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.enablePreview": true,
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.showIcons": false,
+  "workbench.editor.tabActionCloseVisibility": false,
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.enableExperiments": false,
+  "workbench.list.horizontalScrolling": true,
+  "workbench.remoteIndicator.showExtensionRecommendations": false,
+  "workbench.settings.enableNaturalLanguageSearch": false,
+  "workbench.startupEditor": "none",
+  "workbench.tips.enabled": false,
+
+  /* ============================================
+     EDITOR
+     ============================================ */
+  "editor.accessibilitySupport": "off",
+  "editor.codeActionWidget.includeNearbyQuickFixes": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "editor.cursorBlinking": "phase",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 15,
+  "editor.formatOnSave": true,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [120],
+  "editor.suggest.localityBonus": true,
+  "editor.suggestSelection": "first",
+  "editor.tabSize": 2,
+  "editor.unicodeHighlight.allowedCharacters": {
+    "›": true
+  },
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+
+  /* ============================================
+     DIFF EDITOR
+     ============================================ */
+  "diffEditor.experimental.showMoves": true,
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": false,
+
+  /* ============================================
+     FILE EXPLORER
+     ============================================ */
+  "explorer.autoReveal": true,
+  "explorer.autoRevealExclude": { "**/node_modules": true },
+  "explorer.confirmDragAndDrop": false,
+
+  /* ============================================
+     FILES
+     ============================================ */
+  "files.associations": {
+    ".env": "properties"
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/node_modules": true,
+    ".editorconfig": true,
+    "{.env,.env.*}": true,
+    ".{docker,git,eslint,prettier}ignore": true,
+    ".{prettier,eslint,npm,yarn}rc{,.js,.json,.yml,.yaml}": true,
+    "*.{code,sublime}-*": true,
+    ".{github,husky,vscode,idea,next}": true,
+    "{npm,yarn}-{debug,error}.log": true
+  },
+  "files.insertFinalNewline": true,
+  "files.readonlyInclude": {
+    "**/node_modules": true
+  },
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+
+  /* ============================================
+     SEARCH
+     ============================================ */
+  "search.smartCase": true,
+
+  /* ============================================
+     TERMINAL
+     ============================================ */
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen",
+    "-workbench.action.quickOpenView"
+  ],
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontFamily": "'Cascadia Code', Menlo, Monaco, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontWeight": "400",
+  "terminal.integrated.fontWeightBold": "600",
+  "terminal.integrated.scrollback": 10000,
+
+  /* ============================================
+     SOURCE CONTROL & GIT
+     ============================================ */
+  "scm.diffDecorationsGutterWidth": 5,
+  "scm.showActionButton": false,
+  "scm.showInputActionButton": false,
+  "git.enableStatusBarSync": false,
+  "git.pruneOnFetch": true,
+  "merge-conflict.autoNavigateNextConflict.enabled": true,
+
+  /* ============================================
+     DEBUG
+     ============================================ */
+  "debug.openExplorerOnEnd": true,
+  "debug.saveBeforeStart": "nonUntitledEditorsInActiveGroup",
+  "debug.toolBarLocation": "commandCenter",
+
+  /* ============================================
+     PROBLEMS
+     ============================================ */
+  "problems.decorations.enabled": false,
+
+  /* ============================================
+     EXTENSIONS
+     ============================================ */
+  "extensions.autoCheckUpdates": false,
+  "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": true,
+
+  /* ============================================
+     TELEMETRY & PRIVACY
+     ============================================ */
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+
+  /* ============================================
+     TYPESCRIPT
+     ============================================ */
+  "typescript.updateImportsOnFileMove.enabled": "prompt",
+
+  /* ============================================
+     UPDATES
+     ============================================ */
+  "update.showReleaseNotes": false,
+
+  /* ============================================
+     LANGUAGE: CSS/SCSS/LESS
+     ============================================ */
+  "css.lint.vendorPrefix": "ignore",
+  "less.lint.vendorPrefix": "ignore",
+  "scss.lint.vendorPrefix": "ignore",
+
+  /* ============================================
+     EXTENSION: GITHUB COPILOT
+     ============================================ */
+  "github.copilot.enable": { "*": false },
+  "github.copilot.nextEditSuggestions.enabled": false,
+
+  /* ============================================
+     EXTENSION: ESLINT
+     ============================================ */
+  "eslint.lintTask.enable": true,
+
+  /* ============================================
+     EXTENSION: PRETTIER
+     ============================================ */
+  "prettier.htmlWhitespaceSensitivity": "strict",
+
+  /* ============================================
+     EXTENSION: GIT BLAME
+     ============================================ */
+  "gitblame.ignoreWhitespace": true,
+  "gitblame.infoMessageFormat": "${commit.summary} ${author.timestamp}",
+  "gitblame.logNonCritical": false,
+  "gitblame.statusBarMessageFormat": "${author.name} • ${time.ago}",
+
+  /* ============================================
+     EXTENSION: GIT GRAPH
+     ============================================ */
+  "git-graph.date.format": "ISO Date & Time",
+  "git-graph.dialog.addTag.type": "Lightweight",
+
+  /* ============================================
+     EXTENSION: MARKDOWN
+     ============================================ */
+  "markdown.preview.doubleClickToSwitchToEditor": false,
+  "markdown.preview.fontSize": 16,
+
+  /* ============================================
+     EXTENSION: REST CLIENT
+     ============================================ */
+  "rest-client.defaultHeaders": {
+    "User-Agent": "curl",
+    "Content-Type": "application/json"
+  },
+  "rest-client.enableCustomVariableReferencesCodeLens": false,
+  "rest-client.enableTelemetry": false,
+  "rest-client.followredirect": false,
+  "rest-client.fontSize": 14,
+  "rest-client.previewColumn": "current",
+  "rest-client.previewOption": "exchange",
+  "rest-client.rememberCookiesForSubsequentRequests": false,
+
+  /* ============================================
+     EXTENSION: TODO
+     ============================================ */
+  "todo.file.defaultContent": "TODO:\n  › ",
+  "todo.symbols.box": "›",
+  "todo.symbols.cancelled": "✕",
+  "todo.symbols.done": "+",
+
+  /* ============================================
+     LANGUAGE SPECIFIC OVERRIDES
+     ============================================ */
+  "[todo]": {
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 150,
+    "editor.wrappingIndent": "indent"
+  }
+}

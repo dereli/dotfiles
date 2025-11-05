@@ -31,15 +31,5 @@
     "key": "shift+cmd+down",
     "command": "git.unstageSelectedRanges",
     "when": "isInDiffEditor && !operationInProgress"
-  },
-  {
-    "key": "enter",
-    "command": "-renameFile",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "renameFile",
-    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
   }
 ]

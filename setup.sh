@@ -12,15 +12,8 @@ mkdir -p ~/.ssh ~/.config/Code/User/ ~/.zsh/completions
 chmod 600 ~/.ssh/config
 chmod 600 ~/.config/node.pem
 
-vscode_config_dir=""
-case $(uname) in
-Darwin)
-  vscode_config_dir=~/Library/Application\ Support/Code/User
-  ;;
-Linux)
-  vscode_config_dir=~/.config/Code/User
-  ;;
-esac
+codium_config_dir=~/.config/codium/user-data/User
 
-[ -e "$vscode_config_dir/settings.json" ] || ln -s $script_dir/vscode/settings.json "$vscode_config_dir/settings.json"
-[ -e "$vscode_config_dir/keybindings.json" ] || ln -s $script_dir/vscode/keybindings.json "$vscode_config_dir/keybindings.json"
+mkdir -p $codium_config_dir
+[ -e "$codium_config_dir/settings.json" ] || ln -s $script_dir/codium/settings.json "$codium_config_dir/settings.json"
+[ -e "$codium_config_dir/keybindings.json" ] || ln -s $script_dir/codium/keybindings.json "$codium_config_dir/keybindings.json"
