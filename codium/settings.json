@@ -48,6 +48,11 @@
   "editor.unicodeHighlight.allowedCharacters": {
     "›": true
   },
+  "editor.unicodeHighlight.allowedLocales": {
+    "de": true,
+    "nl": true,
+    "tr": true
+  },
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "editor.unicodeHighlight.invisibleCharacters": false,
 
@@ -70,7 +75,8 @@
      FILES
      ============================================ */
   "files.associations": {
-    ".env": "properties"
+    ".env": "properties",
+    "config": "properties"
   },
   "files.exclude": {
     "**/.git": true,
@@ -81,12 +87,15 @@
     "**/Thumbs.db": true,
     "**/node_modules": true,
     ".editorconfig": true,
+    ".gitattributes": true,
     "{.env,.env.*}": true,
     ".{docker,git,eslint,prettier}ignore": true,
     ".{prettier,eslint,npm,yarn}rc{,.js,.json,.yml,.yaml}": true,
     "*.{code,sublime}-*": true,
     ".{github,husky,vscode,idea,next}": true,
-    "{npm,yarn}-{debug,error}.log": true
+    "{npm,yarn}-{debug,error}.log": true,
+    "{deno,yarn}.lock": true,
+    "{pnpm,package}-lock.{yaml,json}": true
   },
   "files.insertFinalNewline": true,
   "files.readonlyInclude": {
@@ -122,6 +131,7 @@
   "scm.showActionButton": false,
   "scm.showInputActionButton": false,
   "git.enableStatusBarSync": false,
+  "git.openRepositoryInParentFolders": "never",
   "git.pruneOnFetch": true,
   "merge-conflict.autoNavigateNextConflict.enabled": true,
 

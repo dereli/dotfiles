@@ -10,7 +10,7 @@ export CLICOLOR=1  # Enable colorized output for supported commands
 export LSCOLORS=Gxfxcxdxbxegedabagacad  # Custom color scheme for 'ls' output
 
 # Use custom CA certificates for Node.js if present
-export NODE_EXTRA_CA_CERTS=~/.config/node.pem
+# export NODE_EXTRA_CA_CERTS=~/.config/node.pem
 
 # Zsh options for usability and history behavior
 setopt autocd                # Change directory by typing its name
@@ -83,8 +83,11 @@ alias gr="cd \`git rev-parse --show-toplevel\`"  # Go to git repo root
 alias k9="kill -9"
 alias n="npm"
 alias py="python"
+alias l="ls -l"
+alias ll="ls -la"
 
 serve() { python3 -m http.server ${1:-8000} }
+chpwd() { ls -la }
 
 # OS-specific aliases for 'ls'
 case $(uname) in

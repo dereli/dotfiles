@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 script_dir="$(dirname "$(realpath "${BASH_SOURCE[0]}")")"
 
-mkdir -p ~/.ssh ~/.config/Code/User/ ~/.zsh/completions
+mkdir -p ~/.ssh ~/.config/ ~/.zsh/completions
 [ -e ~/.zshenv ] || echo "ZDOTDIR=~/.zsh" > ~/.zshenv
 [ -e ~/.zsh/.zshrc ] || ln -s $script_dir/zshrc ~/.zsh/.zshrc
 [ -e ~/.gitconfig ] || ln -s $script_dir/gitconfig ~/.gitconfig
