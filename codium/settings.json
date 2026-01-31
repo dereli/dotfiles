@@ -122,6 +122,7 @@
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontWeight": "400",
   "terminal.integrated.fontWeightBold": "600",
+  "terminal.integrated.initialHint": false,
   "terminal.integrated.scrollback": 10000,
 
   /* ============================================
@@ -211,7 +212,10 @@
      EXTENSION: MARKDOWN
      ============================================ */
   "markdown.preview.doubleClickToSwitchToEditor": false,
-  "markdown.preview.fontSize": 16,
+  "markdown.preview.fontFamily": "Charter",
+  "markdown.preview.fontSize": 20,
+  "markdown.preview.lineHeight": 1.5,
+  "markdown.preview.typographer": true,
 
   /* ============================================
      EXTENSION: REST CLIENT
@@ -232,9 +236,14 @@
      EXTENSION: TODO
      ============================================ */
   "todo.file.defaultContent": "TODO:\n  › ",
-  "todo.symbols.box": "›",
-  "todo.symbols.cancelled": "✕",
-  "todo.symbols.done": "+",
+  "todo.symbols.box": "[ ]",
+  "todo.symbols.cancelled": "[-]",
+  "todo.symbols.done": "[+]",
+
+  /* ============================================
+     EXTENSION: AUTOPEP8
+     ============================================ */
+  "autopep8.args": ["--max-line-length", "140", "--experimental"],
 
   /* ============================================
      LANGUAGE SPECIFIC OVERRIDES
@@ -243,5 +252,8 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 150,
     "editor.wrappingIndent": "indent"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
   }
 }
